@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="loading-screen">
+  <div class="spinner"></div>
+  <p>Loading...</p>
+</div>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="#" data-page="home" class="active">Home</a></li>
+    <li><a href="#" data-page="about">About Me</a></li>
+    <li><a href="#" data-page="projects">Projects</a></li>
+    <li><a href="#" data-page="contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="content">
+  <!-- HOME PAGE -->
+  <section id="home" class="page active">
+    <div class="home-content">
+      <div class="image-placeholder">
+        <img src="Naamloos.png" alt="Profile image" class="home-image">
+      </div>
+      <div class="text">
+        <h1>Hey! My name is Konstantinos Demertzidis</h1>
+        <p>This is where I display all my projects and progress in coding!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT PAGE -->
+  <section id="about" class="page">
+    <h2>About Me</h2>
+    <div class="about-text fade-from-top">
+      <p>
+        Hi! My name is Konstantinos Demertzidis, I’m 18 years old and was born in Venlo, The Netherlands, with Greek nationality. I’m currently a sophomore at SintLucas Eindhoven, studying Game Development. I love bringing ideas to life through code and design, especially when it comes to creating engaging gameplay experiences. I’m good with C# and currently learning C++ at a beginner level. I’m also intermediate in HTML, CSS, and JavaScript, and have experience working with p5.js, which I find pretty cool for creating some simpler projects, I especially enjoy designing sound, UI, and experimenting with time based mechanics  they’re the parts of development that truly excite me and allow me to be creative. Outside of game development, I love listening to music, going out for drinks with friends and family, and traveling whenever I can. My favorite music genre is Hip-Hop, and I enjoy both classic and modern artists. Some of my favorites include Kanye West, Travis Scott, Don Toliver, and Lil Tecca.
+      </p>
+    </div>
+    <div class="about-images">
+      <div class="image-placeholder small slide-up" style="animation-delay: 0.2s;">
+        <img src="sygy1dv0shx41.png" alt="Coding setup" style="width:100%; height:100%; object-fit:cover; border-radius:15px;">
+      </div>
+      <div class="image-placeholder small slide-up" style="animation-delay: 0.4s;">
+        <img src="travel-photo.jpg" alt="Travel photo" style="width:100%; height:100%; object-fit:cover; border-radius:15px;">
+      </div>
+      <div class="image-placeholder small slide-up" style="animation-delay: 0.6s;">
+        <img src="friends-outing.jpg" alt="Hanging out with friends" style="width:100%; height:100%; object-fit:cover; border-radius:15px;">
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS PAGE -->
+  <section id="projects" class="page">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+
+      <!-- Dragon Kombat Super -->
+      <div class="project-card horizontal">
+        <div class="image-placeholder">
+          <img src="NaamlozevideoGemaaktmetClipchamp3-ezgif.com-video-to-gif-converter.gif"
+               alt="Dragon Kombat Super"
+               style="width:100%; height:100%; border-radius:15px; object-fit:cover;">
+        </div>
+        <div class="project-info">
+          <h3>Dragon Kombat Super</h3>
+          <p>
+            This is the first ever game i've worked on that has animations in it, It's inspired by Tekken, Street Fighter and Dragon Ball FighterZ.
+            getting the animations to work was pretty simple by itself, but cutting them down into seperate part with a spritesheet you found online isn't the most fun thing to do.
+            Overall i'm happy with how it turned out and i might just add my AI script to it someday, atleast when i learn how to add animations to AI's.
+          </p>
+        </div>
+      </div>
+
+      <!-- DIO'S WORLD -->
+      <div class="project-card horizontal reverse">
+        <div class="image-placeholder">
+          <img src="NaamlozevideoGemaaktmetClipchamp-ezgif.com-video-to-gif-converter.gif"
+               alt="DIO'S WORLD (PROTO)"
+               style="width:100%; height:100%; border-radius:15px; object-fit:cover;">
+        </div>
+        <div class="project-info">
+          <h3>DIO'S WORLD(WIP)</h3>
+          <p>
+            This is a game i'm currently working on, for the reason of time manipulation. In this game, you get to play as Dio Brando, the main villain in the Jojo's Bizarre Adventure show.
+            Dio's ability is to stop time and therefore i chose to work on this project.
+          </p>
+        </div>
+      </div>
+
+      <!-- Roger the Therapist -->
+      <div class="project-card horizontal">
+        <div class="image-placeholder">
+          <img src="NaamlozevideoGemaaktmetClipchamp1-ezgif.com-video-to-gif-converter.gif"
+               alt="Roger the therapist"
+               style="width:100%; height:100%; border-radius:15px; object-fit:cover;">
+        </div>
+        <div class="project-info">
+          <h3>Roger the Therapist</h3>
+          <p>
+            This was a game I made with a group of friends, it was for our global citizenship class.
+            The assignment was to choose a current problem in the world. We chose cyberbullying. Here you play as a victim of cyberbullying, you have your therapist by your side who tells you if you could've answered better to your bully.
+            Roger can also give the player tips for them to pick the right answer.
+            This was an overall fun experience and helped me learn how to work with UI well.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT PAGE -->
+  <section id="contact" class="page">
+    <h2>Contact Me</h2>
+    <p>I'd love to connect with you! Reach me through my E-mail adress or the links below:</p>
+    <p>Konstantinosdemertzidis0@gmail.com</p>
+    <div class="button-group">
+      <button class="contact-btn" onclick="window.open('https://github.com/KDEM0', '_blank')">GitHub</button>
+      <button class="contact-btn" onclick="window.open('https://www.linkedin.com/in/kosta-demertzidis-3831482a6/', '_blank')">LinkedIn</button>
+      <button class="contact-btn" onclick="window.open('cv.pdf', '_blank')">Download CV</button>
+    </div>
+  </section>
+</main>
+
+<script src="app.js"></script>
+
+<div id="image-popup">
+  <img src="" alt="Expanded view">
+</div>
+
+</body>
+</html>
