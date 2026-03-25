@@ -102,7 +102,6 @@ main {
 
 /* ABOUT PAGE */
 #about {
-    text-align: center;
     animation: fadeIn 0.8s ease forwards;
 }
 
@@ -219,7 +218,18 @@ main {
 /* CONTACT PAGE */
 #contact {
     animation: fadeIn 0.8s ease forwards;
-    text-align: center;
+}
+/* Centered block for about/contact text, left-aligned text but centered position */
+.centered-block {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2em;
+}
+.about-text, .contact-text {
+    max-width: 700px;
+    width: 100%;
+    text-align: left;
 }
 
 .button-group {
@@ -419,3 +429,11 @@ main {
     }
 }
 
+.RogerLink {
+    display: inline-block;
+    margin-top: 0.5em;
+    text-decoration: none;
+    color: #A89BD4;
+    font-weight: bold;
+    transition: color 0.3s;
+}
